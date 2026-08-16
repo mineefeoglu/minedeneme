@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8" />
+<title>Mynerasoft</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <linearGradient id="logoGrad" x1="10%" y1="0%" x2="90%" y2="100%">
+      <stop offset="0%" stop-color="var(--brand-ink)"/>
+      <stop offset="100%" stop-color="var(--primary-soft)"/>
+    </linearGradient>
+    <symbol id="mynerasoftMark" viewBox="0 0 100 100">
+      <polygon points="50,16 79.4,33 79.4,67 50,84 20.6,67 20.6,33" fill="none" stroke="url(#logoGrad)" stroke-width="1.4" opacity="0.55"/>
+      <g stroke="url(#logoGrad)" stroke-width="1" opacity="0.35">
+        <line x1="50" y1="16" x2="50" y2="50"/>
+        <line x1="79.4" y1="33" x2="50" y2="50"/>
+        <line x1="79.4" y1="67" x2="50" y2="50"/>
+        <line x1="50" y1="84" x2="50" y2="50"/>
+        <line x1="20.6" y1="67" x2="50" y2="50"/>
+        <line x1="20.6" y1="33" x2="50" y2="50"/>
+      </g>
+      <g stroke="url(#logoGrad)" stroke-width="1" opacity="0.4">
+        <line x1="50" y1="16" x2="50" y2="4"/>
+        <line x1="79.4" y1="33" x2="89.8" y2="27"/>
+        <line x1="79.4" y1="67" x2="89.8" y2="73"/>
+        <line x1="50" y1="84" x2="50" y2="96"/>
+        <line x1="20.6" y1="67" x2="10.2" y2="73"/>
+        <line x1="20.6" y1="33" x2="10.2" y2="27"/>
+      </g>
+      <g fill="url(#logoGrad)">
+        <circle cx="50" cy="4" r="2.2"/>
+        <circle cx="89.8" cy="27" r="2.2"/>
+        <circle cx="89.8" cy="73" r="2.2"/>
+        <circle cx="50" cy="96" r="2.2"/>
+        <circle cx="10.2" cy="73" r="2.2"/>
+        <circle cx="10.2" cy="27" r="2.2"/>
+      </g>
+      <circle cx="50" cy="16" r="7" fill="var(--primary-strong)"/>
+      <circle cx="79.4" cy="33" r="4.5" fill="var(--primary)"/>
+      <circle cx="79.4" cy="67" r="8" fill="var(--primary-soft)"/>
+      <circle cx="50" cy="84" r="7" fill="var(--primary-soft)"/>
+      <circle cx="20.6" cy="67" r="8" fill="var(--primary)"/>
+      <circle cx="20.6" cy="33" r="6" fill="var(--primary-strong)"/>
+      <text x="50" y="61" text-anchor="middle" font-family="var(--font-mono)" font-weight="800" font-size="36" fill="url(#logoGrad)">&lt;/&gt;</text>
+    </symbol>
+  </defs>
+</svg>
+
+<header id="siteHeader">
+  <div class="container header-row">
+    <a class="logo" href="#top" aria-label="Mynerasoft anasayfa">
+      <svg class="logo-mark-icon" aria-hidden="true"><use href="#mynerasoftMark"></use></svg>
+      <span class="logo-word">Mynera<span class="accent">soft</span></span>
+    </a>
+    <button class="btn btn-ghost" type="button" id="navBookingTrigger">
+      Görüşme Planla
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 5l7 7-7 7M21 12H3"/></svg>
+    </button>
+  </div>
+</header>
+
+<main id="top">
+
+  <section class="hero">
+    <div class="hero-canvas-wrap" aria-hidden="true">
+      <canvas id="neuralCanvas"></canvas>
+    </div>
+    <div class="hero-glow one" aria-hidden="true"></div>
+    <div class="hero-glow two" aria-hidden="true"></div>
+
+    <div class="container">
+      <div class="hero-inner">
+        <h1>Tekrarlayan işleri <span class="accent">otomatikleştirin,</span><br />işinizi kolaylaştırın</h1>
+        <p>İşletmenizin ihtiyaçlarını yapay zekâ ve otomasyonla çalışan sistemlere dönüştürüyoruz. Tekrarlayan işleri ve zaman alan süreçleri otomatikleştiriyor, size özel çözümü kurup çalışır halde teslim ediyoruz.</p>
+        <a class="btn btn-primary" href="#contact">
+          Size Özel Sistemi Planlayalım
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 5l7 7-7 7M21 12H3"/></svg>
+        </a>
+      </div>
+
+      <div class="hero-cards">
+        <div class="glass chat-card">
+          <div class="chat-head">
+            <div class="chat-who">
+              <span class="chat-avatar" aria-hidden="true">S</span>
+              <div>
+                <h4>Selin • Müşteri Deneyimi</h4>
+                <p>WhatsApp</p>
+              </div>
+            </div>
+            <span class="status-pill"><span class="dot"></span>ajan aktif</span>
+          </div>
+          <div class="bubble-meta">
+            <span>23:48</span>
+            <span class="tag">Yeni müşteri mesajı</span>
+          </div>
+          <div class="bubble"><b>AI</b>Merhaba, size nasıl yardımcı olabilirim?</div>
+          <div class="checklist">
+            <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 13l4 4L19 7"/></svg>23:49 • Müşteri bilgilendirildi</div>
+            <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 13l4 4L19 7"/></svg>23:50 • Randevu oluşturuldu</div>
+            <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 13l4 4L19 7"/></svg>23:50 • Ekibe bildirim gönderildi</div>
+          </div>
+        </div>
+
+        <div class="glass summary-card">
+          <div class="summary-head">
+            <span class="summary-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+            </span>
+            <div>
+              <h4>Günün özeti hazır</h4>
+              <p>ajan • 18:02</p>
+            </div>
+          </div>
+          <div class="summary-body">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 13l4 4L19 7"/></svg>
+            <p>14 mesaj yanıtlandı • 6 randevu ayarlandı</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="process">
+    <div class="container">
+      <div class="section-head">
+        <h2>Süreç Nasıl İlerliyor?</h2>
+        <p>İhtiyaç analizinden kuruluma, teslimattan bakıma kadar her adımda yanınızdayız. Şeffaf ve verimli bir süreçle işinizi geleceğe hazırlıyoruz.</p>
+      </div>
+
+      <div class="glass process-panel">
+        <div class="process-grid">
+          <div class="step">
+            <div class="step-num-row"><span class="step-num">1</span><span class="step-line"></span></div>
+            <h3>Strateji ve İhtiyaç Analizi</h3>
+            <p>İşletmenizin mevcut operasyonlarını derinlemesine inceliyor, yapay zekâ ve otomasyonun en yüksek verimlilik sağlayacağı alanları birlikte belirliyoruz.</p>
+          </div>
+          <div class="step">
+            <div class="step-num-row"><span class="step-num">2</span><span class="step-line"></span></div>
+            <h3>Özel Algoritma ve Sistem Geliştirme</h3>
+            <p>Analiz sonuçlarına göre size özel otomasyon mimarisini tasarlıyor, süreçlerinizi hatasız ve hızlı yürütecek yapay zekâ modellerini eğitiyoruz.</p>
+          </div>
+          <div class="step">
+            <div class="step-num-row"><span class="step-num">3</span><span class="step-line"></span></div>
+            <h3>Entegrasyon ve Canlıya Geçiş</h3>
+            <p>Geliştirdiğimiz sistemleri mevcut iş akışınıza sorunsuz şekilde entegre ediyor, ilk günden itibaren verimlilik artışını gözlemlemenizi sağlıyoruz.</p>
+          </div>
+          <div class="step">
+            <div class="step-num-row"><span class="step-num">4</span></div>
+            <h3>Kesintisiz Destek ve Optimizasyon</h3>
+            <p>Sistemin performansını sürekli izliyor, değişen ihtiyaçlarınıza göre güncelliyor ve teknik destek ekibimizle her an yanınızda oluyoruz.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container contact-grid">
+      <div class="contact-info">
+        <h2 style="font-size:clamp(30px,4vw,44px); font-weight:700; letter-spacing:-0.02em; line-height:1.15;">İletişime Geçin</h2>
+        <p>Yapay zekâ ajanı projeniz için veya sorularınız için formu doldurun, ekibimiz en kısa sürede size dönüş yapsın.</p>
+
+        <div class="contact-list">
+          <div class="contact-item">
+            <span class="contact-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+            </span>
+            <div>
+              <h4>E-posta</h4>
+              <a href="mailto:info@mynerasoft.com">info@mynerasoft.com</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+            </span>
+            <div>
+              <h4>Konum</h4>
+              <span>Adana, Türkiye</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <form class="glass form-card" onsubmit="return false;">
+        <div class="field">
+          <label for="name">Ad Soyad</label>
+          <input id="name" name="name" type="text" placeholder="Adınız Soyadınız" autocomplete="name" />
+        </div>
+        <div class="field">
+          <label for="email">E-posta</label>
+          <input id="email" name="email" type="email" placeholder="ornek@sirket.com" autocomplete="email" />
+        </div>
+        <div class="field">
+          <label for="subject">Konu</label>
+          <input id="subject" name="subject" type="text" placeholder="Hangi konuda görüşmek istersiniz?" />
+        </div>
+        <div class="field">
+          <label for="message">Mesaj</label>
+          <textarea id="message" name="message" rows="4" placeholder="Projenizden veya ihtiyaçlarınızdan bahsedin..."></textarea>
+        </div>
+        <button class="btn btn-primary" type="submit">
+          Gönder
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 5l7 7-7 7M21 12H3"/></svg>
+        </button>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<div class="ticker" aria-hidden="true">
+  <div class="ticker-track" id="tickerTrack"></div>
+</div>
+
+<footer>
+  <div class="container footer-row">
+    <a class="logo" href="#top" aria-label="Mynerasoft anasayfa">
+      <svg class="logo-mark-icon" aria-hidden="true"><use href="#mynerasoftMark"></use></svg>
+      <span class="logo-text">
+        <span class="logo-word">Mynera<span class="accent">soft</span></span>
+        <span class="logo-tagline">Software &amp; AI</span>
+      </span>
+    </a>
+    <span class="footer-note">© 2026 Mynerasoft — Tüm hakları saklıdır.</span>
+  </div>
+</footer>
+
+<div class="modal-overlay" id="bookingOverlay" hidden>
+  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="bookingTitle">
+    <button class="modal-close" id="bookingClose" type="button" aria-label="Kapat">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6L6 18M6 6l12 12"/></svg>
+    </button>
+
+    <div id="bookingView">
+      <div class="modal-head">
+        <span class="eyebrow"><span class="dot"></span>Görüşme Planla</span>
+        <h3 id="bookingTitle">Size uygun bir tarih ve saat seçin</h3>
+        <p>Takvimden müsait bir gün ve saat belirleyin, birkaç bilginizi bırakın — ekibimiz görüşmeyi onaylamak için sizinle iletişime geçsin.</p>
+      </div>
+
+      <div class="booking-grid">
+        <div class="glass-inset">
+          <div class="cal-head">
+            <button class="cal-nav" id="calPrev" type="button" aria-label="Önceki ay">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg>
+            </button>
+            <span class="cal-month" id="calMonthLabel"></span>
+            <button class="cal-nav" id="calNext" type="button" aria-label="Sonraki ay">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg>
+            </button>
+          </div>
+          <div class="cal-weekdays">
+            <span>Pt</span><span>Sa</span><span>Ça</span><span>Pe</span><span>Cu</span><span>Ct</span><span>Pz</span>
+          </div>
+          <div class="cal-days" id="calDays"></div>
+        </div>
+
+        <div class="glass-inset slots-panel">
+          <h4>Saat seçin</h4>
+          <p class="slots-date" id="slotsDateLabel">Önce bir tarih seçin</p>
+          <div class="slots-grid" id="slotsGrid"></div>
+        </div>
+      </div>
+
+      <form class="booking-form" id="bookingForm" novalidate>
+        <div class="field-row">
+          <div class="field">
+            <label for="bkName">Ad Soyad</label>
+            <input id="bkName" name="name" type="text" placeholder="Adınız Soyadınız" autocomplete="name" required />
+          </div>
+          <div class="field">
+            <label for="bkEmail">E-posta</label>
+            <input id="bkEmail" name="email" type="email" placeholder="ornek@sirket.com" autocomplete="email" required />
+          </div>
+        </div>
+        <div class="field">
+          <label for="bkNote">Görüşme konusu <span class="field-optional">(opsiyonel)</span></label>
+          <textarea id="bkNote" name="note" rows="3" placeholder="Kısaca ihtiyacınızdan bahsedin..."></textarea>
+        </div>
+        <div class="booking-summary" id="bookingSummary" hidden>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 7V3m8 4V3M3 11h18M5 5h14a2 2 0 012 2v12a2 2 0 01-2 2H5a2 2 0 01-2-2V7a2 2 0 012-2z"/></svg>
+          <span id="bookingSummaryText"></span>
+        </div>
+        <button class="btn btn-primary" type="submit" id="bookingSubmit" disabled>
+          Görüşme Talebini Gönder
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 5l7 7-7 7M21 12H3"/></svg>
+        </button>
+      </form>
+    </div>
+
+    <div class="modal-success" id="bookingSuccess" hidden>
+      <span class="success-icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 13l4 4L19 7"/></svg>
+      </span>
+      <h3>Talebiniz alındı</h3>
+      <p id="successSummary"></p>
+      <p>Ekibimiz görüşmenizi onaylamak için en kısa sürede sizinle iletişime geçecek.</p>
+      <button class="btn btn-ghost" id="bookingDone" type="button">Kapat</button>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
